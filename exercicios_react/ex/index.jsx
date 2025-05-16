@@ -5,7 +5,8 @@ import SilvaFamily from './silvaFamily';
 import Layout from './layout';
 import Family from './family';
 import Member from './member';
-
+import ClassComponent from './classComponent';
+import Field from './field';
 ReactDOM.render(
     <Layout>
         <Component/>
@@ -18,6 +19,8 @@ ReactDOM.render(
             <Member name="Vanessa"></Member>
             <Member name="Júlia"></Member>
         </Family>
+        <ClassComponent lable="Contador" initialValue={10}/>
+        <Field initialValue="0"/>
     </Layout>,
     document.getElementById('app')
 );
